@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+   <title>Area of square in javascript</title>
+</head>
+<body>
+   <h1 align="center">Area of square in javascript</h1>
+   <p id="area_status"></p>
+   <p><label>Enter Your Side Length</label></p>
+   <p><input id="side" type="text" placeholder="Enter Your Side Length" /></p>
+   <p><button onclick="areaofsquare()">calculate</button></p>
+   <script>
+   function areaofsquare()
+   {
+      var side = document.getElementById("side").value;
+      var output = side*side;
+      document.getElementById("area_status").innerHTML="your area is "+output;
+   }
+   </script>
+</body>
+</html>
